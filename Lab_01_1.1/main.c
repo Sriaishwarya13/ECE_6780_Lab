@@ -77,15 +77,15 @@ with hardware register access. */
 	GPIOC->MODER |= (0 << 13);
 	GPIOC->MODER |= (1 << 14);
 	GPIOC->MODER |= (0 << 15);
-	// Setting OTYPE for PC6 and PC7
+	// Setting OTYPE
 	GPIOC->OTYPER |= (0<<6);
 	GPIOC->OTYPER |= (0<<7);
-	// Setting OSPEEDR for PC6 and PC7
+	// Setting OSPEEDR
 	GPIOC->OSPEEDR |= (1<<13);
 	GPIOC->OSPEEDR |= (0<<12);
 	GPIOC->OSPEEDR |= (1<<15);
 	GPIOC->OSPEEDR |= (0<<14);
-	// Setting PUPDR for PC6 and PC7
+	// Setting PUPDR 
 	GPIOC->PUPDR |= ((0 << 12) | (0 << 13));
 	GPIOC->PUPDR |= ((0 << 14) | (0 << 15));
 
